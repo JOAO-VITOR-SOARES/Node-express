@@ -14,3 +14,6 @@ app.post('/', (req, res) => {
     res.send('Hello world');
 })
 
+app.put('/', function (req, res){
+    res.send('got a POST request at  /user');
+});
