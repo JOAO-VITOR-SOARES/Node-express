@@ -17,3 +17,7 @@ app.post('/', (req, res) => {
 app.put('/', function (req, res){
     res.send('got a POST request at  /user');
 });
+
+app.delete('/user', function (req, res){
+    res.send('got a DELETE request at /user');
+})
