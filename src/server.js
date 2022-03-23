@@ -3,7 +3,7 @@ const app = express()
 const port = 3000;
 
 app.get('/', (req, res) => {
-    res.send('Wello world')
+    res.send(`listaDeNome`);
 })
 
 app.listen(port, () => {
@@ -20,4 +20,13 @@ app.put('/', function (req, res){
 
 app.delete('/user', function (req, res){
     res.send('got a DELETE request at /user');
+})
+
+app.postman('/', (req, res) => {
+    const[
+        nome = req.body.nome,
+        idade = req.body.idade
+
+        //conhece o carpano ???
+    ];
 })
